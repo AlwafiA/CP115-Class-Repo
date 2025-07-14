@@ -3,7 +3,7 @@ name: Lab 02 Tests
 on:
   push:
     paths:
-      - 'labs/lab02/**'
+      -f 'labs/lab02/**'
 
 jobs:
   test:
