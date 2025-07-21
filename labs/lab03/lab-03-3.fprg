@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:06:54 PM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMTo1MzozOCBBTTsyNTAx"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMjowNjo1NCBQTTszOzI2MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Kb" type="Real" array="False" size=""/>
+            <input variable="Kb"/>
+            <declare name="Mb" type="Real" array="False" size=""/>
+            <declare name="Gb" type="Real" array="False" size=""/>
+            <declare name="Tb" type="Real" array="False" size=""/>
+            <declare name="Pb" type="Real" array="False" size=""/>
+            <assign variable="Mb" expression="Kb / 1024"/>
+            <assign variable="Gb" expression="Mb / 1024"/>
+            <assign variable="Tb" expression="Gb / 1024"/>
+            <assign variable="Pb" expression="Tb / 1024"/>
+            <output expression="Mb" newline="True"/>
+            <output expression="Gb" newline="True"/>
+            <output expression="Tb" newline="True"/>
+            <output expression="Pb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
