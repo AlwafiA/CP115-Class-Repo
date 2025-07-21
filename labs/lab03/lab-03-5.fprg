@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:45:35 PM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMjoxMzoxMCBQTTsyNTAz"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMjo0NTozNSBQTTsxMDsyNjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Cookis" type="Integer" array="False" size=""/>
+            <input variable="Cookis"/>
+            <declare name="Serving" type="Integer" array="False" size=""/>
+            <declare name="Kcal" type="Integer" array="False" size=""/>
+            <declare name="KcalperCookis" type="Integer" array="False" size=""/>
+            <declare name="KcalperServing" type="Integer" array="False" size=""/>
+            <assign variable="KcalperServing" expression="300"/>
+            <assign variable="Serving" expression="10"/>
+            <declare name="CPS" type="Integer" array="False" size=""/>
+            <assign variable="CPS" expression="Cookis / Serving"/>
+            <assign variable="KcalperCookis" expression="KcalperServing / CPS"/>
+            <declare name="TotalKcal" type="Integer" array="False" size=""/>
+            <assign variable="TotalKcal" expression="Cookis * KcalperCookis"/>
+            <output expression="TotalKcal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
