@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 11:52:59 AM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMTo0ODozMCBBTTsyNDk3"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMTo1Mjo1OSBBTTszOzI2MTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rate" type="Integer" array="False" size=""/>
+            <input variable="Rate"/>
+            <declare name="TotalPayment" type="Integer" array="False" size=""/>
+            <assign variable="TotalPayment" expression="Rate + (Rate * 0.15)"/>
+            <output expression="TotalPayment" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
