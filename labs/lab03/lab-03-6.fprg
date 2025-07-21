@@ -20,7 +20,7 @@
             <input variable="YardW"/>
             <input variable="YardL"/>
             <declare name="DPrice" type="Real" array="False" size=""/>
-            <assign variable="DPrice" expression="2.00"/>
+            <assign variable="DPrice" expression="3.00"/>
             <declare name="MowArea" type="Real" array="False" size=""/>
             <assign variable="MowArea" expression="(YardW * YardL) - (HouseW * HouseL)"/>
             <declare name="Wage" type="Real" array="False" size=""/>
