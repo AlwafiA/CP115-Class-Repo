@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:55:09 PM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMjo0Njo0NSBQTTsyNTE3"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMDc7MjAyNS0wNy0yMTsxMjo1NTowOSBQTTszOzI2Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="HouseW" type="Integer" array="False" size=""/>
+            <declare name="HouseL" type="Integer" array="False" size=""/>
+            <declare name="YardW" type="Integer" array="False" size=""/>
+            <declare name="YardL" type="Integer" array="False" size=""/>
+            <input variable="HouseW"/>
+            <input variable="HouseL"/>
+            <input variable="YardW"/>
+            <input variable="YardL"/>
+            <declare name="DPrice" type="Real" array="False" size=""/>
+            <assign variable="DPrice" expression="2.00"/>
+            <declare name="MowArea" type="Real" array="False" size=""/>
+            <assign variable="MowArea" expression="(YardW * YardL) - (HouseW * HouseL)"/>
+            <declare name="Wage" type="Real" array="False" size=""/>
+            <assign variable="Wage" expression="MowArea * Dprice"/>
+            <output expression="Wage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
