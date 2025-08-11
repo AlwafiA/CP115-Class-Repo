@@ -1,0 +1,50 @@
+# exercise1.py
+
+# This program asks the user for their name, age, and course code,
+# stores this information in variables, and then displays the
+# student information along with the data types of the variables.
+
+def main():
+    """
+    Main function to run the student information program.
+    """
+    print("--- Student Information Program ---")
+
+    # 1. Ask the user for their name
+    # input() always returns a string.
+    student_name = input("Please enter your name: ")
+
+    # 2. Ask the user for their age
+    # input() returns a string, so we convert it to an integer using int().
+    # It's good practice to include error handling for non-numeric input,
+    # but for this basic exercise, we'll assume valid integer input.
+    while True:
+        try:
+            student_age_str = input("Please enter your age: ")
+            student_age = int(student_age_str)
+            break # Exit loop if conversion is successful
+        except ValueError:
+            print("Invalid input for age. Please enter a whole number.")
+
+    # 3. Ask the user for their course code
+    # input() returns a string.
+    course_code = input("Please enter your course code (e.g., CS101): ")
+
+    print("\n--- Displaying Student Information ---")
+
+    # 4. Display the student information
+    print(f"Name: {student_name}")
+    print(f"Age: {student_age}")
+    print(f"Course Code: {course_code}")
+
+    print("\n--- Displaying Data Types ---")
+
+    # 5. Display the data types of the variables
+    # The type() function returns the type of an object.
+    print(f"Data type of 'student_name': {type(student_name)}")
+    print(f"Data type of 'student_age': {type(student_age)}")
+    print(f"Data type of 'course_code': {type(course_code)}")
+
+# This ensures that main() is called only when the script is executed directly.
+if __name__ == "__main__":
+    main()
