@@ -1,4 +1,4 @@
-Product_name = str(Ice) 
+Product_name = str("Ice") 
 Price = 20
 Quantit  = 5
 Total_cost = Price * Quantit

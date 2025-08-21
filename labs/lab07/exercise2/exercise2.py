@@ -1,8 +1,10 @@
+import shopping_data
+
 # Convert these to f-strings
-product_name = "Laptop"
+'''product_name = "Laptop"
 price = 1299.99
 quantity = 2
-total = price * quantity
+total = price * quantity'''
 
 print(f"Product: {product_name}")
 print(f"Price: ${price:.2f}")           
