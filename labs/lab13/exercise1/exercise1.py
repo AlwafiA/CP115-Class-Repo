@@ -10,5 +10,5 @@ while attempts_used < 3 and not login_successful:
     else:
         print("Incorrect password. Try again.")
 
-print("login_successful")
-print("attempts_used")
+print(login_successful)
+print(attempts_used)

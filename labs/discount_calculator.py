@@ -31,3 +31,4 @@ try:
 # Output when failed to convert data to numerical
 except ValueError:
     print("Error")
+#"try" is to try to run the code and if it has an exception then the "except ValueError" will catch it
